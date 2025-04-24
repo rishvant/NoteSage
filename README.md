@@ -46,8 +46,10 @@ NoteSage is a modern, minimal note-taking web application built using **Next.js*
 3. **Set up Supabase**
    Create a Supabase project at supabase.io
    Copy your Supabase URL and anon/public key into an .env file:
+   ```bash
    NEXT_PUBLIC_SUPABASE_URL=your_supabase_url
    NEXT_PUBLIC_SUPABASE_ANON_KEY=your_supabase_key
+   ```
 
 3. **Run the app**
    ```bash
