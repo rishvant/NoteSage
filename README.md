@@ -1,56 +1,51 @@
-# 📝 NoteSage
+# NoteSage - AI-Powered Note Summarizer & Note-Taking App
 
-NoteSage is a modern, minimal note-taking web application built using **Next.js**, **Tailwind CSS**, and **Supabase**. It allows users to create, manage, and organize notes with a focus on performance, simplicity, and scalability.
+NoteSage is a modern, AI-enhanced note-taking web application that helps you capture and condense your thoughts with ease. Built using Next.js, Supabase, and Tailwind CSS, it combines minimalist design with powerful features like real-time note summarization, secure storage, and a clean, responsive UI.
 
-## 🚀 Features
+## Features
 
-- ✍️ Create, update, and delete notes
-- 📚 Organize notes with a clean, responsive UI
-- 🌐 Serverless backend with Supabase
-- ⚡️ Fast and lightweight with Tailwind CSS
-- 🔒 Secure architecture with removed external AI dependencies
-- 🧼 Refactored to simplify authentication logic
+- **Create, Update, Delete Notes**: Full CRUD support for note management.
+- **Clean, Responsive UI**: Built with Tailwind CSS for a modern, lightweight experience.
+- **Secure Authentication**: Powered by Supabase with simplified auth logic.
+- **AI-Powered Summarization**: Automatically summarizes lengthy notes to concise insights.
+- **Custom Hooks & Modular Code**: Easily extendable and developer-friendly project structure.
 
-## 📁 Project Structure
-```plaintext
-├── app/                    # Application pages and routes
-├── components/            # Reusable UI components
-├── hooks/                 # Custom React hooks
-├── lib/                   # Utility functions and Supabase client
-├── supabase/              # Supabase configurations and migrations
-├── middleware.ts          # Middleware logic
-├── tailwind.config.ts     # Tailwind CSS configuration
-├── tsconfig.json          # TypeScript configuration
-├── next.config.js         # Next.js configuration
-```
+## Tech Stack
 
+- **Framework**: Next.js
+- **Styling**: Tailwind CSS
+- **Backend**: Supabase (serverless PostgreSQL + auth)
+- **AI Integration**: [GROQ](https://groq.com/)
+- **Language**: TypeScript
+- **Deployment**: Vercel
 
-## 🧰 Tech Stack
+## Installation
 
-- **Framework:** [Next.js](https://nextjs.org/)
-- **Styling:** [Tailwind CSS](https://tailwindcss.com/)
-- **Backend:** [Supabase](https://supabase.io/)
-- **Language:** TypeScript
+### Prerequisites
 
-## 📦 Getting Started
+Before you begin, make sure you have the following installed:
 
-1. **Clone the repository**
-   ```bash
+- [Node.js](https://nodejs.org/) (v20 or higher)
+- [Git](https://git-scm.com/)
+- [Supabase Account](https://supabase.io/) to create a project and get API keys
+- [GROQ API Key](https://console.groq.com/) for AI summarization
+
+### Steps to Run Locally
+
+1. Clone the repository:
+   ```
    git clone https://github.com/rishvant/NoteSage.git
    cd NoteSage
-   
-2. **Install dependencies**
-   ```bash
-   npm i
-
-3. **Set up Supabase**
-   Create a Supabase project at supabase.io
-   Copy your Supabase URL and anon/public key into an .env file:
-   ```bash
-   NEXT_PUBLIC_SUPABASE_URL=your_supabase_url
-   NEXT_PUBLIC_SUPABASE_ANON_KEY=your_supabase_key
    ```
 
-3. **Run the app**
-   ```bash
+2. Install Dependencies:
+   ```
+   npm install
+   ```
+
+3. Set Up Environment Variables
+
+4. Run Server:
+   ```
    npm run dev
+   ```
